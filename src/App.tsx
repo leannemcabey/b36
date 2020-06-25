@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import { Movie } from './movie-list'
 import Welcome from "./components/Welcome";
 import Introduction from "./components/Introduction";
