@@ -5,6 +5,23 @@ export const FlexColumn = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 4em;
+`
+
+export const FlexColumnTop = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+`
+
+export const FlexRow = styled.div`
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 `
 
 export const BigTitle = styled.h1`

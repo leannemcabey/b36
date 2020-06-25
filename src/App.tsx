@@ -5,7 +5,6 @@ import { Movie } from './movie-list'
 import Welcome from "./components/Welcome";
 import Introduction from "./components/Introduction";
 import MovieCardContainer from "./containers/MovieCardContainer";
-import Kiss from "./components/Kiss";
 import Start from "./components/Start";
 
 interface AppProps {
@@ -21,7 +20,6 @@ function App(props: AppProps) {
                       <Route path="/intro" exact component={Introduction} />
                       <Route path="/start" exact component={Start} />
                       <Route path="/movies/:year" component={ () => <MovieCardContainer movieList={props.movieList}/>} />
-                      <Route path="/muah" component={Kiss} />
                   </Switch>
               </Wrapper>
           </Router>
@@ -32,7 +30,6 @@ function App(props: AppProps) {
 const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
-  padding: 4em;
   height: 700px;
   color: lime;
   font-family: 'VT323', monospace;
