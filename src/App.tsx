@@ -15,12 +15,14 @@ function App(props: AppProps) {
       return (
           <Router>
               <Wrapper>
-                  <Switch>
-                      <Route path="/" exact component={Welcome} />
-                      <Route path="/intro" exact component={Introduction} />
-                      <Route path="/start" exact component={Start} />
-                      <Route path="/movies/:year" component={ () => <MovieCardContainer movieList={props.movieList}/>} />
-                  </Switch>
+                  <main>
+                      <Switch>
+                          <Route path="/" exact component={Welcome} />
+                          <Route path="/intro" exact component={Introduction} />
+                          <Route path="/start" exact component={Start} />
+                          <Route path="/movies/:year" component={ () => <MovieCardContainer movieList={props.movieList}/>} />
+                      </Switch>
+                  </main>
               </Wrapper>
           </Router>
       );

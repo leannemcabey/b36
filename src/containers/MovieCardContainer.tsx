@@ -79,12 +79,14 @@ const YearList = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 10px;
 `
 const YearLink = styled(Link)`
     color: lime;
     font-size: 20px;
     text-shadow: 1px 1px blue;
-    margin: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
     text-decoration: none;
 `
 
