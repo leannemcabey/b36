@@ -44,7 +44,7 @@ function MovieCard(props: MovieCardProps) {
                 <MovieTitle>
                     {props.title}
                 </MovieTitle>
-                <Metrics>
+                <Metrics className="metrics">
                     <div>
                         <Icon src={tomatometer} size={30}/>
                         {props.tomatometer}
@@ -63,6 +63,7 @@ function MovieCard(props: MovieCardProps) {
 }
 
 const MovieCardWrapper = styled.div`
+    margin-top: 10%;
     height: 350px;
     width: 650px;
     display: flex;
@@ -72,6 +73,11 @@ const MovieCardWrapper = styled.div`
     border-radius: 25px;
     padding: 30px;
     color: white;
+    
+    @media (max-width: 500px) {
+        width: 300px;
+        height: 230px;
+    }
 `
 
 const MovieTitle = styled.h1`
@@ -79,11 +85,20 @@ const MovieTitle = styled.h1`
   color: blue;
   text-shadow: 2px 2px lime;
   margin-top: 0px;
+  
+  @media (max-width: 500px) {
+    font-size: 25px;
+  }
 `
 
 const MovieCardImage = styled.img`
     height: 300px;
-    width: 200px;;
+    width: 200px;
+    
+    @media (max-width: 500px) {
+        height: 170px;
+        width: 120px;
+    }
 `
 
 const MovieMetaData = styled.div`
@@ -98,6 +113,11 @@ const Metrics = styled.div`
     justify-content: space-between;
     width: 50%;
     font-size: 25px;
+    
+    @media (max-width: 500px) {
+        width: 100%;
+        font-size: 15px;
+    }
 `
 
 const StreamingPlatform = styled.div`

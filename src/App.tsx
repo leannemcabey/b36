@@ -14,7 +14,7 @@ interface AppProps {
 function App(props: AppProps) {
       return (
           <Router>
-              <Wrapper>
+              <Wrapper className="app-wrapper">
                   <main>
                       <Switch>
                           <Route path="/" exact component={Welcome} />
@@ -37,6 +37,8 @@ const Wrapper = styled.section`
   font-family: 'VT323', monospace;
   justify-content: center;
   align-items: center;
+  height: auto;
+  width: auto;
 `;
 
 export default App;

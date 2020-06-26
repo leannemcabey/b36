@@ -80,6 +80,10 @@ const YearList = styled.div`
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 10px;
+    
+    @media (max-width: 500px) {
+        width: 320px;
+    }
 `
 const YearLink = styled(Link)`
     color: lime;
@@ -88,6 +92,12 @@ const YearLink = styled(Link)`
     margin-left: 10px;
     margin-right: 10px;
     text-decoration: none;
+    
+    @media (max-width: 500px) {
+        font-size: 15px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
 `
 
 
